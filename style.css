@@ -1,173 +1,104 @@
-/* Fontes importadas do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5;
-  transition: background 0.3s ease;
-}
-
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  background-color: #fff; /* Changed from #87cf2d for a lighter background */
+  color: #333; /* Changed for better contrast */
 }
 
 header {
-  background: linear-gradient(to right, #87cf2d, #b7d650);
+  background-image: url("Img/imagem-de-fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
-  text-align: center;
-  padding: 25px 0;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-}
-
-header img {
-  width: 120px;
-}
-
-header h1 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-header p {
-  font-style: italic;
-  margin: 8px 0 0;
-}
-
-header h1,
-nav ul {
-  transition: opacity 0.3s ease;
-}
-
-header:hover h1,
-header:hover nav ul {
-  opacity: 0.8;
-}
-
-.botao-menu {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.botao-menu i {
-  font-size: 24px;
 }
 
 nav {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-nav.ativo {
-  max-height: 500px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 12px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  display: block;
-  padding: 10px 0;
-}
-
-nav a:hover {
-  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif; /* Added a more elegant font */
+}
+
+nav a:hover {
+  background-color: #68a81f;
+}
+
+main {
+  padding: 20px;
 }
 
 section {
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif; /* Added a more elegant font */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  color: #333; /* Changed for better contrast */
+}
+
+.container {
   max-width: 800px;
-  margin: 60px auto;
-  padding: 24px;
-  background: #fff;
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  margin: 0 auto;
 }
 
-section h2 {
-  color: #87cf2d;
-  margin-bottom: 32px;
+.chamada-para-acao {
   text-align: center;
+  margin-top: 20px;
 }
 
-.atividade {
-  padding: 18px;
-  margin-bottom: 28px;
-  border-left: 4px solid #b7d650;
-  transition: transform 0.3s ease;
+.chamada-para-acao a {
+  background-color: #87cf2d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.atividade:hover {
-  transform: scale(1.05);
+.imagem img {
+  width: 100%;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galeria img {
+  width: 30%;
+  margin: 5px;
+  border-radius: 5px; /* Added rounded corners for visual interest */
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
 }
 
 footer {
-  background-color: #fff;
-  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.15);
-  padding: 24px;
-}
-
-footer h3 {
-  color: #7eca4c;
-  font-size: 18px;
-  margin-bottom: 16px;
-  font-family: 'Raleway', sans-serif;
-}
-
-footer p,
-footer li {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-footer a {
-  color: #7eca4c;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #5e9444;
-}
-
-.map {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer .col {
+  background-color: #68a81f;
+  color: #fff;
+  padding: 10px;
   text-align: center;
-}
-
-/* Responsivo mobile */
-@media (max-width: 767px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  section {
-    margin: 32px auto;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .map {
-    height: 200px;
-  }
 }
