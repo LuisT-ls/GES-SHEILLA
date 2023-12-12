@@ -3,146 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo Espírita Sheilla</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Grupo Espírita Sheilla</title>
   </head>
+
   <body>
     <header>
+      <h1>Grupo Espírita Sheilla</h1>
       <nav>
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li>
-            <a href="#institucional">Institucional</a>
-            <ul>
-              <li><a href="#pintura-mediunica">Pintura Mediúnica</a></li>
-            </ul>
-          </li>
-          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#atividades">Atividades</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
+        <form id="searchForm">
+          <input type="text" id="searchInput" placeholder="Buscar..." />
+          <button type="button" onclick="searchContent()">Buscar</button>
+        </form>
       </nav>
     </header>
 
-    <main>
-      <section id="inicio">
-        <div class="container">
-          <h1>Grupo Espírita Sheilla</h1>
-          <p>
-            O Grupo Espírita Sheilla é uma instituição religiosa sem fins
-            lucrativos, fundada em 2023, na cidade de Salvador, Bahia.
-          </p>
-          <p>
-            Nosso objetivo é promover o estudo e a prática da Doutrina Espírita,
-            bem como oferecer apoio espiritual e social aos nossos membros e à
-            comunidade.
-          </p>
-          <div class="chamada-para-acao">
-            <a href="#pintura-mediunica"
-              >Saiba mais sobre a pintura mediúnica</a
-            >
-          </div>
-        </div>
-      </section>
+    <section id="home">
+      <h2>Bem-vindo ao Grupo Espírita Sheilla</h2>
+      <p>Descubra a paz interior e a harmonia espiritual conosco.</p>
+      <button id="changeColor">Mudar cor de destaque</button>
+    </section>
 
-      <section id="institucional">
-        <div class="container">
-          <h2>Institucional</h2>
-          <p>
-            O Grupo Espírita Sheilla é uma instituição aberta a todos,
-            independentemente de sua religião, crença ou condição social.
-          </p>
-          <p>Nossas atividades são gratuitas e abertas ao público.</p>
-          <p>
-            Para mais informações, entre em contato conosco pelo telefone +55
-            (71) 3035-4708 ou pelo e-mail contato@cman.org.br.
-          </p>
-          <div class="imagem">
-            <img
-              src="imagens/foto-do-grupo.jpg"
-              alt="Foto do Grupo Espírita Sheilla"
-            />
-          </div>
-        </div>
-      </section>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        O Grupo Espírita Sheilla foi fundado em 2010 com a missão de difundir os
+        ensinamentos espíritas e promover o bem através da caridade.
+      </p>
+    </section>
 
-      <section id="pintura-mediunica">
-        <div class="container">
-          <h2>Pintura Mediúnica</h2>
-          <p>
-            A pintura mediúnica é uma manifestação artística que ocorre por meio
-            da mediunidade.
-          </p>
-          <p>
-            Os médiuns pintores recebem mensagens espirituais que são traduzidas
-            em obras de arte.
-          </p>
-          <p>
-            A pintura mediúnica é uma forma de comunicação entre os mundos
-            espiritual e material.
-          </p>
-          <div class="galeria">
-            <img src="imagens/pintura-1.jpg" alt="Pintura mediúnica 1" />
-            <img src="imagens/pintura-2.jpg" alt="Pintura mediúnica 2" />
-            <img src="imagens/pintura-3.jpg" alt="Pintura mediúnica 3" />
-          </div>
-          <p>
-            As pinturas mediúnicas podem retratar diferentes temas, como
-            paisagens, figuras humanas, símbolos e mensagens espirituais.
-          </p>
-          <p>
-            Elas podem ser utilizadas para fins terapêuticos, educativos ou
-            simplesmente para admiração.
-          </p>
-        </div>
-      </section>
+    <section id="atividades">
+      <h2>Atividades</h2>
+      <p>Participe das nossas atividades espirituais e culturais como:</p>
+      <ul>
+        <li>Palestras</li>
+        <li>Passes Espirituais</li>
+        <li>Evangelização Infantil</li>
+        <li>Reuniões Mediúnicas</li>
+        <li>Doações para Instituições Carentes</li>
+      </ul>
+    </section>
 
-      <section id="agenda">
-        <div class="container">
-          <h2>Agenda</h2>
-          <p>Confira a nossa agenda de atividades para as próximas semanas:</p>
-          <ul>
-            <li>
-              <strong>Dia 20 de julho</strong>
-              <br />
-              Reunião mediúnica às 20h
-            </li>
-            <li>
-              <strong>Dia 25 de julho</strong>
-              <br />
-              Palestra sobre "A importância da caridade" às 19
-            </li>
-            <li>
-              <strong>Dia 30 de julho</strong>
-              <br />
-              Estudo do Evangelho Segundo o Espiritismo às 18h
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section id="eventos">
+      <h2>Próximos Eventos</h2>
+      <p>Participe dos nossos próximos eventos:</p>
+      <ul>
+        <li>Bazar Beneficente - 01/03/2023</li>
+        <li>Palestra sobre o Poder da Fé - 15/03/2023</li>
+      </ul>
+    </section>
 
-      <section id="contato">
-        <div class="container">
-          <h2>Contato</h2>
-          <p>
-            Entre em contato conosco para saber mais sobre o Grupo Espírita
-            Sheilla.
-          </p>
-          <ul>
-            <li><strong>Telefone:</strong> +55 (71) 3035-4708</li>
-            <li><strong>E-mail:</strong> contato@cman.org.br</li>
-            <li>
-              <strong>Endereço:</strong> Grupo Espírita Scheilla Rua Doutor
-              Artur Couto, 61 Mussurunga I, Salvador – BA CEP: 41490-350
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery-container">
+        <!-- Thumbnails -->
+        <a
+          href="foto1.jpg"
+          data-lightbox="gallery"
+          data-title="Descrição da imagem 1"
+        >
+          <img src="thumbnail1.jpg" alt="Imagem 1" />
+        </a>
+        <a
+          href="foto2.jpg"
+          data-lightbox="gallery"
+          data-title="Descrição da imagem 2"
+        >
+          <img src="thumbnail2.jpg" alt="Imagem 2" />
+        </a>
+        <!-- Adicione mais thumbnails conforme necessário -->
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco:</p>
+
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" /><br /><br />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" /><br /><br />
+
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem"></textarea><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
     <footer>
-      <p>
-        Copyright © 2023 Grupo Espírita Sheilla. Todos os direitos reservados.
-      </p>
+      <p>&copy; 2023 Grupo Espírita Sheilla. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
