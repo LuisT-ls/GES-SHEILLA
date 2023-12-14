@@ -2,109 +2,118 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Grupo Espírita Sheilla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
   </head>
-
   <body>
     <header>
+      <img src="Img/Logo GES.png" alt="Logotipo do Grupo Espírita Sheilla" />
+
       <h1>Grupo Espírita Sheilla</h1>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#atividades">Atividades</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <form id="searchForm">
-          <input type="text" id="searchInput" placeholder="Buscar..." />
-          <button type="button" onclick="searchContent()">Buscar</button>
-        </form>
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Doutrinárias</a>
+        <a href="#">Atendimento Fraterno</a>
+        <a href="#">Livraria</a>
+        <a href="#">Campanhas Periódicas</a>
       </nav>
     </header>
 
-    <section id="home">
-      <h2>Bem-vindo ao Grupo Espírita Sheilla</h2>
-      <p>Descubra a paz interior e a harmonia espiritual conosco.</p>
-      <button id="changeColor">Mudar cor de destaque</button>
-    </section>
+    <main>
+      <article>
+        <div id="imageCarousel" class="carousel">
+          <img
+            class="carousel-image"
+            src="imagens/slide1.jpg"
+            alt="Descrição da imagem 1"
+          />
+          <img
+            class="carousel-image"
+            src="imagens/slide2.jpg"
+            alt="Descrição da imagem 2"
+          />
+        </div>
 
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>
-        O Grupo Espírita Sheilla foi fundado em 2010 com a missão de difundir os
-        ensinamentos espíritas e promover o bem através da caridade.
-      </p>
-    </section>
+        <section id="home" class="hero-section">
+          <div class="hero-content">
+            <h2>Apresentação</h2>
+            <p>
+              O Grupo Espírita Sheilla trabalha no campo do humanismo, sem
+              formalismos, casa franciscana, simplicidade, atendendo a todos sem
+              distinção. Conheça nossa história e propósito.
+            </p>
+            <a href="#">Saiba mais sobre a apresentação</a>
+          </div>
+        </section>
 
-    <section id="atividades">
-      <h2>Atividades</h2>
-      <p>Participe das nossas atividades espirituais e culturais como:</p>
-      <ul>
-        <li>Palestras</li>
-        <li>Passes Espirituais</li>
-        <li>Evangelização Infantil</li>
-        <li>Reuniões Mediúnicas</li>
-        <li>Doações para Instituições Carentes</li>
-      </ul>
-    </section>
+        <section id="sobre">
+          <h2>Sobre</h2>
+          <p>
+            O Grupo Espírita Sheilla é uma instituição dedicada ao estudo e
+            prática da doutrina espírita. Saiba mais sobre nossa história,
+            objetivos, atividades e eventos.
+          </p>
+          <a href="#">Saiba mais sobre nós</a>
+        </section>
 
-    <section id="eventos">
-      <h2>Próximos Eventos</h2>
-      <p>Participe dos nossos próximos eventos:</p>
-      <ul>
-        <li>Bazar Beneficente - 01/03/2023</li>
-        <li>Palestra sobre o Poder da Fé - 15/03/2023</li>
-      </ul>
-    </section>
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <ul>
+            <li><a href="#">Homem de Bem</a></li>
+            <li><a href="#">Manjedoura</a></li>
+            <!-- Adicione mais projetos aqui -->
+          </ul>
+        </section>
 
-    <section id="galeria">
-      <h2>Galeria de Fotos</h2>
-      <div class="gallery-container">
-        <!-- Thumbnails -->
-        <a
-          href="foto1.jpg"
-          data-lightbox="gallery"
-          data-title="Descrição da imagem 1"
-        >
-          <img src="thumbnail1.jpg" alt="Imagem 1" />
-        </a>
-        <a
-          href="foto2.jpg"
-          data-lightbox="gallery"
-          data-title="Descrição da imagem 2"
-        >
-          <img src="thumbnail2.jpg" alt="Imagem 2" />
-        </a>
-        <!-- Adicione mais thumbnails conforme necessário -->
-      </div>
-    </section>
+        <section id="doutrinarias">
+          <h2>Doutrinárias</h2>
+          <ul>
+            <li><a href="#">APE</a></li>
+            <li><a href="#">Desobsessão</a></li>
+            <!-- Adicione mais temas doutrinários aqui -->
+          </ul>
+        </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco:</p>
+        <section id="atendimento-fraterno">
+          <h2>Atendimento Fraterno</h2>
+          <ul>
+            <li><a href="#">APE</a></li>
+            <li><a href="#">Desobsessão</a></li>
+            <li><a href="#">Orientação Espiritual</a></li>
+            <!-- Adicione mais serviços de atendimento fraterno aqui -->
+          </ul>
+        </section>
 
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" /><br /><br />
+        <section id="livraria">
+          <h2>Livraria</h2>
+          <ul>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Comprar</a></li>
+          </ul>
+        </section>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" /><br /><br />
-
-        <label for="mensagem">Mensagem:</label><br />
-        <textarea id="mensagem"></textarea><br /><br />
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+        <section id="campanhas-periodicas">
+          <h2>Campanhas Periódicas</h2>
+          <ul>
+            <li><a href="#">Início do Ano</a></li>
+            <li><a href="#">São João</a></li>
+            <li><a href="#">Dia das Crianças</a></li>
+            <li><a href="#">Natal</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
 
     <footer>
-      <p>&copy; 2023 Grupo Espírita Sheilla. Todos os direitos reservados.</p>
+      <p>Copyright © 2023 - Grupo Espírita Sheilla</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
